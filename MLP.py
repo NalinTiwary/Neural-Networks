@@ -33,7 +33,7 @@ def load_data():
 
 data, labels = load_data()
 inputs_train,inputs_test,labels_train,labels_test=train_test_split(data, labels, test_size=0.2, random_state=101)
-nnet = MLPClassifier(hidden_layer_sizes=(10), max_iter= 10000)
+nnet = MLPClassifier(hidden_layer_sizes=(37), max_iter= 37000)
 nnet.fit(inputs_train, labels_train)
 
 predictions = nnet.predict(inputs_test)
